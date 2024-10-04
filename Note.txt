@@ -1,0 +1,42 @@
+1 - Apply migrations automatic
+{
+	   -ask clr to create object of application dbcontext
+	   using var scope = app.Services.CreateScope(); // this method will be used to resolve the Application dbcontext services
+           var services = scope.ServiceProvider; // call get the manger of the scope
+   	   var context = services.GetService<ApplicationContext>(); // ask the manger for spacific service
+   	   await context.Database.MigrateAsync();
+}
+
+//Logger Factory
+we use logger to trace erros happens
+first we need to create object from it
+   var logger= services.GetService<logger>(); // ask the manger for spacific service
+
+
+
+
+
+Data Seeding => Dummies Data for test
+1 - Get current json directory
+2 - convert it to the list of datatype you want to convertu to jsonserializer.Deserialize(List<T>)(jsonfile)
+
+
+Specification Design pattern
+used to make your query dinamic for uses later 
+if we need to include a products with it's brand name and type it will be something like this
+context.products.include(product).include(type)
+
+we convert it to dynamic 
+1 - database 
+2 - Criteria 
+3 - Includes
+
+
+--Service Layer 
+this will handle all logic instead of the controller 
+meaning we make all logic in service layer then we pass the result to controller 
+
+
+
+
+
