@@ -1,0 +1,15 @@
+D:\Diploma\WebApi\Route\Day01\WebApi\Api.Data\bin\Debug\net8.0\Api.Data.deps.json
+D:\Diploma\WebApi\Route\Day01\WebApi\Api.Data\bin\Debug\net8.0\Api.Data.dll
+D:\Diploma\WebApi\Route\Day01\WebApi\Api.Data\bin\Debug\net8.0\Api.Data.pdb
+D:\Diploma\WebApi\Route\Day01\WebApi\Api.Data\bin\Debug\net8.0\Api.Core.dll
+D:\Diploma\WebApi\Route\Day01\WebApi\Api.Data\bin\Debug\net8.0\Api.Core.pdb
+D:\Diploma\WebApi\Route\Day01\WebApi\Api.Data\obj\Debug\net8.0\Api.Data.csproj.AssemblyReference.cache
+D:\Diploma\WebApi\Route\Day01\WebApi\Api.Data\obj\Debug\net8.0\Api.Data.GeneratedMSBuildEditorConfig.editorconfig
+D:\Diploma\WebApi\Route\Day01\WebApi\Api.Data\obj\Debug\net8.0\Api.Data.AssemblyInfoInputs.cache
+D:\Diploma\WebApi\Route\Day01\WebApi\Api.Data\obj\Debug\net8.0\Api.Data.AssemblyInfo.cs
+D:\Diploma\WebApi\Route\Day01\WebApi\Api.Data\obj\Debug\net8.0\Api.Data.csproj.CoreCompileInputs.cache
+D:\Diploma\WebApi\Route\Day01\WebApi\Api.Data\obj\Debug\net8.0\Api.Data.csproj.Up2Date
+D:\Diploma\WebApi\Route\Day01\WebApi\Api.Data\obj\Debug\net8.0\Api.Data.dll
+D:\Diploma\WebApi\Route\Day01\WebApi\Api.Data\obj\Debug\net8.0\refint\Api.Data.dll
+D:\Diploma\WebApi\Route\Day01\WebApi\Api.Data\obj\Debug\net8.0\Api.Data.pdb
+D:\Diploma\WebApi\Route\Day01\WebApi\Api.Data\obj\Debug\net8.0\ref\Api.Data.dll
