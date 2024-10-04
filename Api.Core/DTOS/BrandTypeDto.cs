@@ -4,9 +4,12 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace Api.Core.Specifications
+namespace Api.Core.DTOS
 {
-    public class ProductSpecification
+    public class BrandTypeDto
     {
+        public int Id { get; set; }
+
+        public string Name { get; set; }
     }
 }

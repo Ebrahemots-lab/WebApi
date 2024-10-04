@@ -13,3 +13,4 @@ D:\Diploma\WebApi\Route\Day01\WebApi\Api.Data\obj\Debug\net8.0\Api.Data.dll
 D:\Diploma\WebApi\Route\Day01\WebApi\Api.Data\obj\Debug\net8.0\refint\Api.Data.dll
 D:\Diploma\WebApi\Route\Day01\WebApi\Api.Data\obj\Debug\net8.0\Api.Data.pdb
 D:\Diploma\WebApi\Route\Day01\WebApi\Api.Data\obj\Debug\net8.0\ref\Api.Data.dll
+D:\Diploma\WebApi\Route\Day01\WebApi\Api.Data\obj\Debug\net8.0\Api.Data.sourcelink.json

@@ -15,13 +15,14 @@ namespace Api.Data.Repositories
             _context = context;
         }
 
+        #region WithoutSpecifications
         public async Task<IEnumerable<TEntity>> GetAllAsync()
         {
-            if (typeof(TEntity) == typeof(Product)) 
+            if (typeof(TEntity) == typeof(Product))
             {
-                return (IEnumerable<TEntity>) await _context.Products.Include(P => P.Brand).Include(P => P.Type).ToListAsync();
+                return (IEnumerable<TEntity>)await _context.Products.Include(P => P.Brand).Include(P => P.Type).ToListAsync();
             }
-           return await _context.Set<TEntity>().ToListAsync();
+            return await _context.Set<TEntity>().ToListAsync();
         }
 
 
@@ -32,11 +33,15 @@ namespace Api.Data.Repositories
             return await _context.Set<TEntity>().FirstOrDefaultAsync();
         }
 
+
+        #endregion
+
+
+
         public async Task<IEnumerable<TEntity>> GetAllAsyncSpec(BaseSpecifications<TEntity> specs)
         {
             return await ApplySpecifications(specs).ToListAsync();
         }
-
 
         public async Task<TEntity> GetByIdAsyncSpec(BaseSpecifications<TEntity> specs)
         {
@@ -46,6 +51,21 @@ namespace Api.Data.Repositories
          public IQueryable<TEntity> ApplySpecifications(BaseSpecifications<TEntity> specifications) 
         {
             return  SpecificationseEvalutor<TEntity>.GetQuery(_context.Set<TEntity>(), specifications);
+        }
+
+        public async Task Add(TEntity entity )
+        {
+            await _context.AddAsync(entity);
+        }
+
+        public void Update(TEntity entity)
+        {
+            _context.Update(entity);
+        }
+
+        public void Delete(TEntity entity)
+        {
+            _context.Remove(entity);
         }
     } 
 }

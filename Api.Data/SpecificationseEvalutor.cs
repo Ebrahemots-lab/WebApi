@@ -19,7 +19,7 @@ namespace Api.Data
 
             if(specifications.Criteria is not null) 
             {
-                query.Where(specifications.Criteria);
+                query = query.Where(specifications.Criteria);
             }
 
             //.Include(P => P.Brand).Include(P => P.Type).; */

@@ -138,3 +138,8 @@ D:\Diploma\WebApi\Route\Day01\WebApi\WebApi\bin\Debug\net8.0\Api.Core.dll
 D:\Diploma\WebApi\Route\Day01\WebApi\WebApi\bin\Debug\net8.0\Api.Data.dll
 D:\Diploma\WebApi\Route\Day01\WebApi\WebApi\bin\Debug\net8.0\Api.Data.pdb
 D:\Diploma\WebApi\Route\Day01\WebApi\WebApi\bin\Debug\net8.0\Api.Core.pdb
+D:\Diploma\WebApi\Route\Day01\WebApi\WebApi\obj\Debug\net8.0\WebApi.sourcelink.json
+D:\Diploma\WebApi\Route\Day01\WebApi\WebApi\bin\Debug\net8.0\AutoMapper.dll
+D:\Diploma\WebApi\Route\Day01\WebApi\WebApi\bin\Debug\net8.0\AutoMapper.Extensions.Microsoft.DependencyInjection.dll
+D:\Diploma\WebApi\Route\Day01\WebApi\WebApi\bin\Debug\net8.0\Api.Services.dll
+D:\Diploma\WebApi\Route\Day01\WebApi\WebApi\bin\Debug\net8.0\Api.Services.pdb

@@ -1,8 +1,10 @@
 
 using Api.Core.Interfaces;
+using Api.Core.Mapping;
 using Api.Data;
 using Api.Data.Data;
 using Api.Data.Repositories;
+using Api.Services.Services.Products;
 using Microsoft.EntityFrameworkCore;
 using Microsoft.Extensions.Logging;
 
@@ -24,8 +26,11 @@ namespace WebApi
              );
             #endregion
 
+            builder.Services.AddAutoMapper(typeof(Profiles));
 
             builder.Services.AddScoped<IProductRepository, ProductRepository>();
+            builder.Services.AddScoped<IProductService, ProductService>();
+            builder.Services.AddScoped<IUnitOfWork, UnitOfWork>();
 
 
             // Learn more about configuring Swagger/OpenAPI at https://aka.ms/aspnetcore/swashbuckle

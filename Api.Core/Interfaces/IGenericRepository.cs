@@ -17,5 +17,11 @@ namespace Api.Core.Interfaces
         Task<IEnumerable<TEntity>> GetAllAsyncSpec(BaseSpecifications<TEntity> specs);
 
         Task<TEntity> GetByIdAsyncSpec(BaseSpecifications<TEntity> specs);
+
+        Task Add(TEntity entity);
+
+        void Update(TEntity entity);
+
+        void Delete(TEntity entity);
     }
 }

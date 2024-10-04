@@ -1,6 +1,8 @@
-﻿using Api.Core.Interfaces;
+﻿using Api.Core.DTOS;
+using Api.Core.Interfaces;
 using Api.Core.Models;
 using Api.Core.Specifications;
+using Api.Data.Data;
 using Microsoft.AspNetCore.Mvc;
 
 namespace WebApi.Controllers
@@ -8,24 +10,33 @@ namespace WebApi.Controllers
 
     public class ProductController : BaseApiController
     {
-        private readonly IProductRepository _repo;
+        private readonly IProductService _service;
 
-        public ProductController(IProductRepository repo)
+        public ProductController(IProductService service)
         {
-            _repo = repo;
+            _service = service;
         }
 
         [HttpGet]
-        public async Task<ActionResult<IEnumerable<Product>>> ShowAll() 
+        public async Task<IEnumerable<ProductDTO>> ShowAll() 
         {
-            var specs = new BaseSpecifications<Product>();
+           var productsToDisplay =  await _service.GetAllProductsAsync();
 
-            specs.Includes.Add(P => P.Brand);
-            specs.Includes.Add(P => P.Type);
+            if(productsToDisplay is not null) 
+            {
+                return productsToDisplay;
+            }
+            else 
+            {
+                return new List<ProductDTO>();
+            }
 
-            var result = await _repo.GetAllAsyncSpec(specs);
+        }
 
-            return Ok(result);
+        [HttpGet("{id}")]
+        public async Task<ActionResult<ProductDTO>> GeyById(int id)
+        {
+            return await _service.GetProductById(id);
         }
     }
 }
